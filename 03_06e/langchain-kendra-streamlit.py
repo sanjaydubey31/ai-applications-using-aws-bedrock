@@ -14,7 +14,7 @@ st.title("Employee HR Bot")
 
 #Define the retriever
 retriever = AmazonKendraRetriever(
-    index_id="",
+    index_id="d328b53c-c2af-4908-bb4c-302b6a7e26b3",
     top_k=5
 )
 

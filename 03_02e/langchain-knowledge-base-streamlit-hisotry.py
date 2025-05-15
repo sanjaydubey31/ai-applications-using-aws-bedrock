@@ -14,7 +14,7 @@ st.title("Employee HR Bot")
 
 #Define the retriever
 retriever = AmazonKnowledgeBasesRetriever(
-    knowledge_base_id="",
+    knowledge_base_id="K2FMI9WK45",
     retrieval_config={"vectorSearchConfiguration": {"numberOfResults": 4}},
 )
 
@@ -51,7 +51,8 @@ Assistant:
 
 #configure prompt template
 prompt_template = PromptTemplate(
-  input_variables= ['context', 'chat_history', 'question']
+  input_variables= ['context', 'chat_history', 'question'],
+  template=my_template
 )
 
 #Configure the chain
